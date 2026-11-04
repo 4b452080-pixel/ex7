@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>作品集</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="name.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+     *      {margin: 0; padding: 0; box-sizing: border-box;}
+    
+     body   {width: 100%; min-width: 600px; max-width: 960px; margin: 0 auto; font-family: Microsoft JhengHei, sans-serif;}
+    
+     header {width: 100%; background: #EFCFE3; padding: 20px; text-align: center;}
+    
+     nav    {width: 100%; background: black; color: white; padding: 10px;}
+     nav a  {color: white; text-decoration: none;}
+     nav span {margin-right: 15px;}
+    
+     main   {width: 100%; background: #B3DEE2; float: left; padding: 20px;} 
+    
+     footer {width: 100%; background: #EAF2D7; clear: both; text-align: center; padding: 15px;}
+
+     fieldset {
+         border: 2px solid #86135E;
+         border-radius: 8px;
+         padding: 25px;
+         margin-bottom: 20px;
+         background-color: #FAFAFA;
+     }
+     
+     legend {
+         font-weight: bold;
+         color: #86135E;
+         padding: 4px 12px;
+         font-size: 1.15em;
+         background: white;
+         border: 1px solid #86135E;
+         border-radius: 4px;
+     }
+
+     .section-group {
+         margin-bottom: 25px;
+         padding-bottom: 20px;
+         border-bottom: 1px dashed #ccc;
+     }
+
+     .section-title {
+         font-weight: bold;
+         font-size: 1.1em;
+         color: #222;
+         margin-bottom: 12px;
+         display: block;
+     }
+
+     /* 響應式影片與地圖容器 */
+     .responsive-iframe {
+         max-width: 100%;
+         border-radius: 6px;
+     }
+   </style>
+</head>
+
+<body id="top">
+    <nav aria-label="主導覽列">
+        <h3>
+            <span><i class="fa fa-home" aria-hidden="true"></i> <a href="ex2.html">首頁</a></span>
+            <span><i class="fa fa-user" aria-hidden="true"></i> <a href="aboutme.html">關於我</a></span>
+            <span><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="album.html">作品集</a></span>
+            <span><i class="fa fa-file-text" aria-hidden="true"></i> <a href="questionnaire.html">線上表單</a></span>
+            <span><i class="fa fa-cart-plus" aria-hidden="true"></i> 我的商店</span>
+            <span><i class="fa fa-plug" aria-hidden="true"></i> 相關連結</span>
+        </h3>
+    </nav>
+
+    <header>
+        <h1>個人作品集與相簿</h1>
+        <h4>歡迎瀏覽我的攝影紀錄、喜愛的音樂與生活地標！</h4>
+    </header>
+
+    <main>        
+            <fieldset>
+            <legend>作品展示</legend>
+
+            <!-- 第一部分：我的相簿 -->
+            <div class="section-group">
+                <span class="section-title"><i class="fa fa-camera" aria-hidden="true"></i> 一、景點相簿</span>
+                
+                <div class="w3-row-padding">
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-card w3-white" style="border-radius: 6px; overflow: hidden;">
+                            <a href="https://photos.app.goo.gl/LV555SkFWmEzbCCw7" target="_blank" rel="noopener noreferrer">
+                                <img src="IMG_111.JPG" alt="孔廟" style="width:100%; height:180px; object-fit:cover;">
+                            </a>
+                            <div class="w3-container w3-center" style="padding: 10px;">
+                                <h4><b>孔廟</b></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-card w3-white" style="border-radius: 6px; overflow: hidden;">
+                            <a href="https://photos.app.goo.gl/CBS6kxkXvYcb4pPEA" target="_blank" rel="noopener noreferrer">
+                                <img src="IMG_222.JPG" alt="赤崁樓" style="width:100%; height:180px; object-fit:cover;">
+                            </a>
+                            <div class="w3-container w3-center" style="padding: 10px;">
+                                <h4><b>赤崁樓</b></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-card w3-white" style="border-radius: 6px; overflow: hidden;">
+                            <a href="https://photos.app.goo.gl/h4b7wtHR2LQZ4rB58" target="_blank" rel="noopener noreferrer">
+                                <img src="IMG_333.JPG" alt="安平老街" style="width:100%; height:180px; object-fit:cover;">
+                            </a>
+                            <div class="w3-container w3-center" style="padding: 10px;">
+                                <h4><b>安平老街</b></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-group">
+                <span class="section-title"><i class="fa fa-music" aria-hidden="true"></i> 二、我最喜歡的歌曲</span>
+                <iframe class="responsive-iframe" width="100%" height="350" src="https://www.youtube.com/embed/UwuAPyOImoI" 
+                    title="TAEYANG - 눈,코,입 (EYES, NOSE, LIPS) M/V" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="section-group" style="border-bottom: none; padding-bottom: 0;">
+                <span class="section-title"><i class="fa fa-map-marker" aria-hidden="true"></i> 三、我家附近著名地標</span>
+                <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.36952758151!2d120.3547087!3d22.659357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e1acff30bd661%3A0x5555512648cf8356!2z5L-R5riF5rmW!5e0!3m2!1szh-TW!2stw!4v1700000000000!5m2!1szh-TW!2stw" 
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </fieldset>
+    </main>
+
+    <footer>
+        <p>&copy; 2026南台公司</p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>

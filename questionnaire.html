@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>個人追劇與串流影音習慣調查問卷</title>   
+    <link rel="icon" href="name.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+     *      {margin: 0; padding: 0; box-sizing: border-box;}
+    
+     body   {width: 100%; min-width: 600px; max-width: 960px; margin: 0 auto; font-family: Microsoft JhengHei, sans-serif;}
+    
+     header {width: 100%; background: #EFCFE3; padding: 20px; text-align: center;}
+    
+     nav    {width: 100%; background: black; color: white; padding: 10px;}
+     nav a  {color: white; text-decoration: none;}
+     nav span {margin-right: 15px;}
+    
+     main   {width: 100%; background: #B3DEE2; float: left; padding: 20px;} 
+    
+     footer {width: 100%; background: #EAF2D7; clear: both; text-align: center; padding: 15px;}
+
+     form   {background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+
+     fieldset {
+         border: 2px solid #86135E;
+         border-radius: 8px;
+         padding: 25px;
+         margin-bottom: 20px;
+         background-color: #FAFAFA;
+     }
+     
+     legend {
+         font-weight: bold;
+         color: #86135E;
+         padding: 4px 12px;
+         font-size: 1.15em;
+         background: white;
+         border: 1px solid #86135E;
+         border-radius: 4px;
+     }
+
+     .question-group {
+         margin-bottom: 22px;
+         padding-bottom: 18px;
+         border-bottom: 1px dashed #ccc;
+     }
+
+     .question-title {font-weight: bold;font-size: 1.05em;
+         color: #222;
+         display: block;
+     }
+
+     .question-desc {
+         display: block;
+         font-size: 0.85em;
+         color: #666;
+         margin-top: 3px;
+         margin-bottom: 10px;
+     }
+
+     .options-group label {
+         margin-right: 18px;
+         cursor: pointer;
+         display: inline-block;
+         margin-top: 6px;
+     }
+
+     input[type="text"], input[type="number"], input[type="date"], select, textarea {
+         width: 100%;
+         max-width: 450px;
+         padding: 8px 12px;
+         margin-top: 6px;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         font-size: 0.95em;
+     }
+
+     textarea {
+         max-width: 100%;
+         resize: vertical;
+     }
+
+     /* (5)-1 按鈕樣式 */
+     .btn-container {
+         text-align: center;
+         margin-top: 15px;
+     }
+
+     button {
+         padding: 10px 28px;
+         font-size: 1em;
+         font-weight: bold;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+         margin: 0 10px;
+         transition: 0.2s;
+     }
+
+     button[type="submit"] {
+         background-color: #86135E;
+         color: white;
+     }
+
+     button[type="reset"] {
+         background-color: #757575;
+         color: white;
+     }
+
+     button:hover {
+         opacity: 0.88;
+     }
+   </style>
+</head>
+
+<body id="top">
+    <nav aria-label="主導覽列">
+        <h3>
+            <span><i class="fa fa-home" aria-hidden="true"></i> <a href="ex2.html">首頁</a></span>
+            <span><i class="fa fa-user" aria-hidden="true"></i> <a href="aboutme.html">關於我</a></span>
+            <span><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="album.html">作品集</a></span>
+            <span><i class="fa fa-file-text" aria-hidden="true"></i> <a href="questionnaire.html">線上表單</a></span>
+            <span><i class="fa fa-cart-plus" aria-hidden="true"></i> 我的商店</span>
+            <span><i class="fa fa-plug" aria-hidden="true"></i> 相關連結</span>
+        </h3>
+    </nav>
+
+    <header>
+        <h1>日常追劇與影音娛樂習慣調查</h1>
+        <h4>填寫您的追劇偏好與娛樂習慣，幫助我們瞭解大學生的影音休閒風格！</h4>
+    </header>
+    
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>追劇習慣問卷</legend>
+
+                <div class="question-group">
+                    <span class="question-title">1. 是非題：您平時追劇時，是否習慣開啟 1.25 倍速或更高倍速播放？</span>
+                    <span class="question-desc">說明：本題為是非選答，若平時有開倍速觀看的習慣請在方框內勾選。</span>
+                    <div class="options-group">
+                        <label><input type="checkbox" name="q1_speedup" value="YES"> 是，我習慣開啟倍速播放</label>
+                        <label><input type="checkbox" name="q1_speedup" value="NO"> 否 </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <span class="question-title">2. 單選題：您最常使用哪一種裝置觀看劇集或影影娛樂內容？</span>
+                    <span class="question-desc">說明：請從下列項目中選取一個最主要的觀看裝置。</span>
+                    <div class="options-group">
+                        <label><input type="radio" name="q2_device" value="mobile" required> 智慧型手機</label>
+                        <label><input type="radio" name="q2_device" value="tablet"> 平板電腦 (iPad等)</label>
+                        <label><input type="radio" name="q2_device" value="laptop"> 桌上型/筆記型電腦</label>
+                        <label><input type="radio" name="q2_device" value="tv"> 電視/投影機</label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <label for="q3_time_slot" class="question-title">3. 單選題：您通常在一天中的哪一個時段進行追劇？</label>
+                    <span class="question-desc">說明：點選下拉選單選取您最主要的追劇時間區段。</span>
+                    <select id="q3_time_slot" name="q3_time_slot" required>
+                        <option value="">-- 請選擇追劇時段 --</option>
+                        <option value="noon">中午用餐休息時間</option>
+                        <option value="commute">通勤搭車時間</option>
+                        <option value="evening">下課/放學後晚餐時段</option>
+                        <option value="night">睡前深夜時段</option>
+                        <option value="weekend">假日整天集中一次看</option>
+                    </select>
+                </div>
+
+                <div class="question-group">
+                    <span class="question-title">4. 複選題：您目前有付費訂閱（或與家人朋友共用）哪些線上串流影音平台？</span>
+                    <span class="question-desc">說明：本題為複選題，請勾選所有您平時會觀看的平台。</span>
+                    <div class="options-group">
+                        <label><input type="checkbox" name="q4_platform" value="netflix"> Netflix</label>
+                        <label><input type="checkbox" name="q4_platform" value="disney"> Disney+</label>
+                        <label><input type="checkbox" name="q4_platform" value="youtube_premium"> YouTube Premium</label>
+                        <label><input type="checkbox" name="q4_platform" value="iqiyi"> 愛奇藝 / 騰訊視頻</label>
+                        <label><input type="checkbox" name="q4_platform" value="friDay"> friDay影音 / KKTV</label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <label for="q5_genres" class="question-title">5. 複選題：請問您平時最喜歡觀看哪些類型的劇集題材？</label>
+                    <span class="question-desc">說明：按住 Ctrl 鍵（Mac 請按 Cmd 鍵）即可選取多個喜歡的題材類型。</span>
+                    <select id="q5_genres" name="q5_genres" multiple size="5">
+                        <option value="romance">浪漫愛情 / 都市甜寵</option>
+                        <option value="suspense">懸疑推理 / 犯罪偵查</option>
+                        <option value="sci-fi">科幻冒險 / 奇幻動作</option>
+                        <option value="comedy">輕鬆喜劇 / 日常搞笑</option>
+                        <option value="anime">日本動漫 / 2D動畫</option>
+                    </select>
+                </div>
+
+                <div class="question-group">
+                    <label for="q6_favorite_show" class="question-title">6. 填充題：近期讓您印象最深刻或最想推薦的一部「劇集或電影」名稱為何？</label>
+                    <span class="question-desc">說明：請直接輸入作品名稱。</span>
+                    <input type="text" id="q6_favorite_show" name="q6_favorite_show" placeholder="例如：黑白大廚、葬送的芙莉蓮" required>
+                </div>
+
+                <div class="question-group">
+                    <label for="q7_daily_hours" class="question-title">7. 填充題：您平均每天大約花費多少「小時」在看劇或看影音影片？</label>
+                    <span class="question-desc">說明：限定輸入阿拉伯數字（單位：小時）。</span>
+                    <input type="number" id="q7_daily_hours" name="q7_daily_hours" min="0" max="24" step="0.5" placeholder="例如：2" required>
+                </div>
+
+                <div class="question-group">
+                    <label for="q8_last_watch" class="question-title">8. 填充題：請選擇您最近一次「一口氣把一部劇追完（通宵或完結）」的日期：</label>
+                    <span class="question-desc">說明：點選右側日曆圖示選擇日期。</span>
+                    <input type="date" id="q8_last_watch" name="q8_last_watch" required>
+                </div>
+
+                <div class="question-group" style="border-bottom: none;">
+                    <label for="q9_review" class="question-title">9. 問答題：請簡單分享您選擇一部新劇來看的主要標準（例如：演員陣容、網路評價、題材新鮮度等）？</label>
+                    <span class="question-desc">說明：高度設定為 4 列，請輸入您的追劇心得或選劇條件。</span>
+                    <textarea id="q9_review" name="q9_review" rows="4" placeholder="請在此輸入您的心得與想法..."></textarea>
+                </div>
+
+            </fieldset>
+
+            <div class="btn-container">
+                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> 送出表單</button>
+                <button type="reset"><i class="fa fa-refresh" aria-hidden="true"></i> 重設表單</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026南台公司</p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>
